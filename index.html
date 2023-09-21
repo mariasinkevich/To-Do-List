@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Wolfram To-Do List</title>
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Syne:wght@600&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+	<div class="container">
+		<div class="app-window">
+			<div class="main-column">
+				<h2 class="app-window__header">Let's do something!</h2>
+			<div class="entry-row">
+				<input id="input-box" class="entry-row__input" type="text" placeholder="Type some ideas">
+				<button onclick="addTask()" class="entry-row__btn">Add</button>
+			</div>
+			<ul class="main-list" id="list-container">
+			</ul>
+			</div>
+			<div class="btn-column">
+				<button onclick="selectEven()" class="btn-column__item">Select Even</button>
+				<button onclick="selectOdd()" class="btn-column__item">Select Odd</button>
+				<button onclick="deleteFirst()" class="btn-column__item">Delete First</button>
+				<button onclick="deleteLast()" class="btn-column__item">Delete Last</button>
+			</div>
+		</div>
+		<p class="min-footer">Sinkevich Mariia x ROSATOM CASE LAB JavaScript</p>
+	</div>
+	<script src="main.js"></script>
+</body>
+</html>
